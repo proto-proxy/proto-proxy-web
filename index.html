@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>protos tools</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://raw.githubusercontent.com/proto-proxy/proto-proxy-web/main/OIG2.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            position: relative;
+        }
+        .top-bar {
+            width: 1000px; /* 1000 pixels long */
+            height: 50px; /* Original height */
+            background-color: black;
+            position: absolute;
+            top: 50px; /* Positioned further down */
+            left: 50%; /* Center the bar horizontally */
+            transform: translateX(-50%); /* Center the bar horizontally */
+            border-radius: 30px; /* Rounded corners */
+            display: flex;
+            justify-content: space-between; /* Align items on the sides */
+            align-items: center; /* Center text vertically */
+            color: white; /* Text color */
+            font-family: Arial, sans-serif; /* Font style */
+            font-size: 18px; /* Text size increased */
+            position: relative; /* Position relative for pseudo element */
+        }
+        .download-link {
+            text-decoration: none; /* Remove default underline */
+            cursor: pointer; /* Change cursor to indicate clickability */
+            color: white; /* Make text white */
+            position: relative; /* Position relative for individual adjustments */
+        }
+        .download-link:hover {
+            text-decoration: underline; /* Underline text on hover */
+        }
+        .download-link:hover::after {
+            position: absolute; /* Position absolute for the pseudo element */
+            background-color: black; /* Background color of the pseudo element */
+            color: white; /* Text color of the pseudo element */
+            padding: 5px 10px; /* Padding of the pseudo element */
+            border-radius: 5px; /* Border radius of the pseudo element */
+            bottom: -30px; /* Positioning the pseudo element below */
+            left: 50%; /* Centering the pseudo element horizontally */
+            transform: translateX(-50%); /* Centering the pseudo element horizontally */
+            white-space: nowrap; /* Ensure description stays on one line */
+        }
+        .download-link:nth-child(1) {
+            right: -100px; /* Shift first link 100 pixels towards the center */
+        }
+        .download-link:nth-child(2) {
+            left: -100px; /* Shift second link 100 pixels towards the center */
+        }
+        .download-link:nth-child(1):hover::after {
+            content: 'protos hex decoder is a tool made for swapping fortnite game data and giving players a advantage'; /* Content for the first link's pseudo element */
+        }
+        .download-link:nth-child(2):hover::after {
+            content: 'protos mesh nuller is a tool made for nulling static meshes in games such as fortnite'; /* Content for the second link's pseudo element */
+        }
+        .discord-link {
+            text-decoration: none; /* Remove default underline */
+            cursor: pointer; /* Change cursor to indicate clickability */
+            color: rgb(0, 0, 0); /* Make text white */
+            font-family: Arial, sans-serif; /* Font style */
+            font-size: 20px; /* Text size increased */
+            position: absolute; /* Position absolute for individual adjustments */
+            top: 10px; /* Positioned at the top */
+            left: 50%; /* Center the text horizontally */
+            transform: translateX(-50%); /* Center the text horizontally */
+        }
+    </style>
+</head>
+<body>
+    <a class="discord-link" href="https://discord.gg/m5Vma9yMDU" target="_blank">Join our Discord</a>
+    <div class="top-bar">
+        <a class="download-link" href="https://github.com/proto-proxy/protos-hex-decoder-update-/archive/refs/tags/v20.zip" download>download hex decoder</a>
+        <a class="download-link" href="https://github.com/proto-proxy/mesh-nuller/archive/refs/tags/v2.zip" download>download mesh-nuller</a>
+    </div>
+</body>
+</html>
